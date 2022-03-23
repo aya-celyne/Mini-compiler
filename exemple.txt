@@ -1,0 +1,33 @@
+Program test
+
+PDEC
+
+a|b|d: Pint;
+c: Pfloat;
+@define Pfloat pi = 3.14; 
+@define Pint p = 3;
+PINST
+
+Begin
+//affectaions
+c ← 3.14 ;
+a ← 2/0; //division par zero
+a← c; // incompatible type idf idf
+pi ← b; // modification d'une cst
+non_declarer ← 4; // variable non declarer
+/*boucle
+*/
+FOR a← 3 WHILE 4
+DO
+    b←9 - 5;
+ENDFOR 
+//condition
+DO 
+b ← a * 1;
+IF :((a==2.4)&(a>1))
+ELSE
+c ← 3 / 4;
+d ← 4 - 1;
+ENDIF
+
+End
